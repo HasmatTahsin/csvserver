@@ -16,8 +16,14 @@ $ docker images
 ```sh
 $ docker run -itd infracloudio/csvserver:latest /bin/bash
 ```
-  - Getting error : 2020/11/25 07:12:03 error while reading the file "/csvserver/inputdata": open /csvserver/inputdata: no such file or directory
-  - Created bash script file which generate a file named inputFile : vi gencsv.sh
+  - Getting error : 
+  ```sh
+  $ 2020/11/25 07:12:03 error while reading the file "/csvserver/inputdata": open /csvserver/inputdata: no such file or directory
+  ```
+  - Created bash script file which generate a file named inputFile :
+  ```sh 
+  $ vi gencsv.sh
+  ```
   - Copy the inputFile to container as inputdata :
   ```sh 
   $ docker container cp inputFile csv:/csvserver/inputdata
