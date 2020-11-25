@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  web:
+    image: infracloudio/csvserver
+    ports:
+    - "9393:9393"
+    
